@@ -1,0 +1,11 @@
+venv
+.idea/
+*.pyc
+local_*.py
+*.sqlite3
+img
+image
+images
+resumes
+resume
+collected_static

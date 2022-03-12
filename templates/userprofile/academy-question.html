@@ -1,0 +1,685 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Landing page, Template, Business, Service">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">
+    <title>نظرسنجی</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="{% static 'web-questions/img/logo.png' %}" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'web-questions/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'web-questions/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'web-questions/css/LineIcons.css' %}">
+    <link rel="stylesheet" href="{% static 'web-questions/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'web-questions/css/owl.theme.css' %}">
+    <link rel="stylesheet" href="{% static 'web-questions/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'web-questions/css/nivo-lightbox.css' %}">
+    <link rel="stylesheet" href="{% static 'web-questions/css/main.css' %}">    
+    <link rel="stylesheet" href="{% static 'web-questions/css/responsive.css' %}">
+     <meta charset="utf-8">
+     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+   
+     
+     
+     <style>
+
+
+.radio {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  direction: rtl;
+}
+.radio input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio input[type=radio] + .radio-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+ 
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio input[type=radio]:checked + .radio-label:before {
+  background-color: #FF7300;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio input[type=radio]:focus + .radio-label:before {
+  outline: none;
+  border-color: #FF7300;
+}
+
+.radio input[type=radio] + .radio-label:empty:before {
+  margin-right: 0;
+}
+.radio-2{
+   margin-left: 20px;
+}
+
+/* question 2 */
+.radio2 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  direction: rtl;
+}
+.radio2 input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio2 input[type=radio] + .radio2-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+ 
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio2 input[type=radio]:checked + .radio2-label:before {
+  background-color: #FF7300;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio2 input[type=radio]:focus + .radio2-label:before {
+  outline: none;
+  border-color: #FF7300;
+}
+
+.radio2 input[type=radio] + .radio2-label:empty:before {
+  margin-right: 0;
+}
+.radio-2{
+   margin-left: 20px;
+}
+/* question 3 */
+.radio3 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  direction: rtl;
+}
+.radio3 input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio3 input[type=radio] + .radio3-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+ 
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio3 input[type=radio]:checked + .radio3-label:before {
+  background-color: #FF7300;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio3 input[type=radio]:focus + .radio3-label:before {
+  outline: none;
+  border-color: #FF7300;
+}
+
+.radio3 input[type=radio] + .radio3-label:empty:before {
+  margin-right: 0;
+}
+.radio-2{
+   margin-left: 20px;
+}
+/* question 4 */
+.radio4 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  direction: rtl;
+}
+.radio4 input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio4 input[type=radio] + .radio4-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+ 
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio4 input[type=radio]:checked + .radio4-label:before {
+  background-color: #FF7300;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio4 input[type=radio]:focus + .radio4-label:before {
+  outline: none;
+  border-color: #FF7300;
+}
+
+.radio4 input[type=radio] + .radio4-label:empty:before {
+  margin-right: 0;
+}
+.radio-2{
+   margin-left: 20px;
+}
+/* question 5 */
+.radio5 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  direction: rtl;
+}
+.radio5 input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio5 input[type=radio] + .radio5-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+ 
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio5 input[type=radio]:checked + .radio5-label:before {
+  background-color: #FF7300;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio5 input[type=radio]:focus + .radio5-label:before {
+  outline: none;
+  border-color: #FF7300;
+}
+
+.radio5 input[type=radio] + .radio5-label:empty:before {
+  margin-right: 0;
+}
+.radio-2{
+   margin-left: 20px;
+}
+/* question 6 */
+.radio6 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  direction: rtl;
+}
+.radio6 input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio6 input[type=radio] + .radio6-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+ 
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio6 input[type=radio]:checked + .radio6-label:before {
+  background-color: #FF7300;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio6 input[type=radio]:focus + .radio6-label:before {
+  outline: none;
+  border-color: #FF7300;
+}
+
+.radio6 input[type=radio] + .radio6-label:empty:before {
+  margin-right: 0;
+}
+.radio-2{
+   margin-left: 20px;
+}
+/* question 7 */
+.radio7 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  direction: rtl;
+}
+.radio7 input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio7 input[type=radio] + .radio7-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+ 
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio7 input[type=radio]:checked + .radio7-label:before {
+  background-color: #FF7300;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio7 input[type=radio]:focus + .radio7-label:before {
+  outline: none;
+  border-color: #FF7300;
+}
+
+.radio7 input[type=radio] + .radio7-label:empty:before {
+  margin-right: 0;
+}
+.radio-2{
+   margin-left: 20px;
+}
+/* question 8 */
+.radio8 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  direction: rtl;
+}
+.radio8 input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.radio8 input[type=radio] + .radio8-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #b4b4b4;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+ 
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio8 input[type=radio]:checked + .radio8-label:before {
+  background-color: #FF7300;
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.radio8 input[type=radio]:focus + .radio8-label:before {
+  outline: none;
+  border-color: #FF7300;
+}
+
+.radio8 input[type=radio] + .radio8-label:empty:before {
+  margin-right: 0;
+}
+.radio-2{
+   margin-left: 20px;
+}
+     </style>
+     
+  </head>
+ 
+  <body>
+
+    <header id="home" class="hero-area">    
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar" style = "background-color: #250242;padding-bottom: -50px;">
+               <div class = "container-sm" style="width: 80%;margin-left: 10%;">
+                 <div class = "row">
+                   <div class = "col" id = "navbar-col">
+                       <div class = "container-sm">
+                           <div class = "row">
+                             <div class = "col-md-3"></div>
+                             <div class = "col-md-6">
+                               <a href="https://smrastad.com/"><img class = "logo-rastad" src="{% static 'web-questions/img/logo-25.svg' %}" alt=""></a>
+                             </div>
+                             <div class = "col-md-3"></div>
+                           </div>
+                           <div class = "col-md-9 col-xs-12">
+                           
+                         
+                       </div>
+                       </div>  
+                   </div>
+                 </div>
+               </div>
+      </nav>  
+    </header>
+    <div class = "academy-questions-new-main">
+        <div class = "container">
+            <div class = "row">  
+              <div class = "col-md-12">
+                  <div class = "academy-questions-main">
+                     <form id ="formquestion1" method="POST" action="{%url 'go_to_final_page' %}">
+                       {% csrf_token %}
+                     <div class = 'container'>
+                         <div class = "row">
+                             <div class = "col-md-12">
+                                 <h3 class = "academy-questions-title" style = "color: #FF7300;">راستادی عزیز</h3>
+                                 <h5 class = "academy-questions-title2">
+                                  ضمن تشکر فراوان از شما بابت شرکت در کارگاه های آموزشی، به منظور بهبود خدمات آتی راستاد از شما درخواست می شود تا فرم نظرسنجی زیر را تکمیل کنید.
+                                 </h5>
+                             </div>
+                             <!-- New Question 1-->
+                             <div class = "col-md-12">
+                                 <p style = 'direction: rtl;'>
+                                  +کیفیت مطالب ارائه شده را چطور ارزیابی کردید؟
+                                 </p>
+                             </div>
+                                <div class = "col-md-12">
+                                  <div class="container">
+                                      <div class="radio">
+                                        <input id="radio-1" name="radio" type="radio" value=1>
+                                        <label for="radio-1" class="radio-label">
+                                           عالی
+                                        </label>
+                                      </div>
+                                    <div class="radio">
+                                      <input id="radio-2" name="radio" type="radio" value=2>
+                                      <label  for="radio-2" class="radio-label">خوب</label>
+                                    </div>
+                                    
+                                    <div class="radio">
+                                      <input id="radio-3" name="radio" type="radio" value=3>
+                                      <label  for="radio-3" class="radio-label">متوسط</label>
+                                    </div>
+
+                                    <div class="radio">
+                                      <input id="radio-4" name="radio" type="radio" value=4>
+                                      <label  for="radio-4" class="radio-label">ضعیف</label>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                <!-- New Question 2-->
+                                <div class = "col-md-12">
+                                  <p style = 'direction: rtl;'>
+                                    +کیفیت نحوه ارائه مطالب را چطور ارزیابی می کنید؟
+                                  </p>
+                              </div>
+                                 <div class = "col-md-12">
+                                   <div class="container">
+                                       <div class="radio2">
+                                         <input id="radio2-1" name="radio2" type="radio" value=1>
+                                         <label for="radio2-1" class="radio2-label">
+                                            عالی
+                                         </label>
+                                       </div>
+                                     <div class="radio2">
+                                       <input id="radio2-2" name="radio2" type="radio" value=2>
+                                       <label  for="radio2-2" class="radio2-label">خوب</label>
+                                     </div>
+                                     
+                                     <div class="radio2">
+                                       <input id="radio2-3" name="radio2" type="radio" value=3>
+                                       <label  for="radio2-3" class="radio2-label">متوسط</label>
+                                     </div>
+ 
+                                     <div class="radio2">
+                                       <input id="radio2-4" name="radio2" type="radio" value=4>
+                                       <label  for="radio2-4" class="radio2-label">ضعیف</label>
+                                     </div>
+                                     </div>
+                                   </div>
+                             
+                                 <!-- New Question 3-->
+                                 <div class = "col-md-12">
+                                  <p style = 'direction: rtl;'>
+                                    +زمانبندی کلاس های آموزشی را چگونه ارزیابی می‌کنید؟
+                                  </p>
+                              </div>
+                                 <div class = "col-md-12">
+                                   <div class="container">
+                                       <div class="radio3">
+                                         <input id="radio3-9" name="radio3" type="radio" value=1>
+                                         <label for="radio3-9" class="radio3-label">
+                                            عالی
+                                         </label>
+                                       </div>
+                                     <div class="radio3">
+                                       <input id="radio3-10" name="radio3" type="radio" value=2>
+                                       <label  for="radio3-10" class="radio3-label">خوب</label>
+                                     </div>
+                                     
+                                     <div class="radio3">
+                                       <input id="radio3-11" name="radio3" type="radio" value=3>
+                                       <label  for="radio3-11" class="radio3-label">متوسط</label>
+                                     </div>
+ 
+                                     <div class="radio3">
+                                       <input id="radio3-12" name="radio3" type="radio" value=4>
+                                       <label  for="radio3-12" class="radio3-label">ضعیف</label>
+                                     </div>
+                                     </div>
+                                   </div>
+                                 <!-- New Question 4-->
+                                 <div class = "col-md-12">
+                                  <p style = 'direction: rtl;'>
+                                    + از بین کارگاههای آموزشی برگزار شده در این دوره، کدام کارگاه بیشترین کارایی را برای شما داشته است؟
+                                  </p>
+                              </div>
+                                 <div class = "col-md-12">
+                                   <div class="container">
+                                       <div class="radio4">
+                                         <input id="radio4-13" name="radio4" type="radio" value=1>
+                                         <label for="radio4-13" class="radio4-label">
+                                          کارگاه آنچین
+                                         </label>
+                                       </div>
+                                     <div class="radio4">
+                                       <input id="radio4-14" name="radio4" type="radio" value=2>
+                                       <label  for="radio4-14" class="radio4-label">کارگاه فاندامنتال</label>
+                                     </div>
+                                     
+                                     <div class="radio4">
+                                       <input id="radio4-15" name="radio4" type="radio" value=3>
+                                       <label  for="radio4-15" class="radio4-label">کارگاه تکنیکال</label>
+                                     </div>
+ 
+                                     <div class="radio4">
+                                       <input id="radio4-16" name="radio4" type="radio" value=4>
+                                       <label  for="radio4-16" class="radio4-label">کارگاه مدیریت سرمایه</label>
+                                     </div>
+                                     </div>
+                                   </div>
+                                 <!-- New Question 5-->
+                                 <div class = "col-md-12">
+                                  <p style = 'direction: rtl;'>
+                                    +کیفیت و سهولت استفاده از پلتفرم آنلاینی که کلاس های آموزشی در آن برگزار شد را چگونه ارزیابی می‌کنید؟
+                                  </p>
+                              </div>
+                                 <div class = "col-md-12">
+                                   <div class="container">
+                                       <div class="radio5">
+                                         <input id="radio5-17" name="radio5" type="radio" value=1>
+                                         <label for="radio5-17" class="radio5-label">
+                                          عالی
+                                         </label>
+                                       </div>
+                                     <div class="radio5">
+                                       <input id="radio5-18" name="radio5" type="radio" value=2>
+                                       <label  for="radio5-18" class="radio5-label">خوب</label>
+                                     </div>
+                                     
+                                     <div class="radio5">
+                                       <input id="radio5-19" name="radio5" type="radio" value=3>
+                                       <label  for="radio5-19" class="radio5-label">متوسط</label>
+                                     </div>
+ 
+                                     <div class="radio5">
+                                       <input id="radio5-20" name="radio5" type="radio" value=4>
+                                       <label  for="radio5-20" class="radio5-label">ضعیف</label>
+                                     </div>
+                                     </div>
+                                   </div>
+                                 <!-- New Question 6-->
+                                 <div class = "col-md-12">
+                                  <p style = 'direction: rtl;'>
+                                    +نحوه پرسش و پاسخ و ارتباط با اساتید دوره را چگونه ارزیابی می‌کنید؟!
+                                  </p>
+                              </div>
+                                 <div class = "col-md-12">
+                                   <div class="container">
+                                       <div class="radio6">
+                                         <input id="radio6-21" name="radio6" type="radio" value=1>
+                                         <label for="radio6-21" class="radio6-label">
+                                          عالی
+                                         </label>
+                                       </div>
+                                     <div class="radio6">
+                                       <input id="radio6-22" name="radio6" type="radio" value=2>
+                                       <label  for="radio6-22" class="radio6-label">خوب</label>
+                                     </div>
+                                     
+                                     <div class="radio6">
+                                       <input id="radio6-23" name="radio6" type="radio" value=3>
+                                       <label  for="radio6-23" class="radio6-label">متوسط</label>
+                                     </div>
+ 
+                                     <div class="radio6">
+                                       <input id="radio6-24" name="radio6" type="radio" value=4>
+                                       <label  for="radio6-24" class="radio6-label">ضعیف</label>
+                                     </div>
+                                     </div>
+                                   </div>
+                                 <!-- New Question 7-->
+                                 <div class = "col-md-12">
+                                  <p style = 'direction: rtl;'>
+                                    +آیا در صورت برگزاری دوره پیشرفته کارگاه های فعلی، در آنها شرکت خواهید کرد؟
+                                  </p>
+                              </div>
+                              <div class = "col-md-12">
+                                <div class="container">
+                                    <div class="radio7">
+                                      <input id="radio7-27" name="radio7" type="radio" value=1>
+                                      <label for="radio7-27" class="radio7-label">
+                                       بله
+                                      </label>
+                                    </div>
+                                  <div class="radio7">
+                                    <input id="radio7-28" name="radio7" type="radio" value=2>
+                                    <label  for="radio7-28" class="radio7-label">خیر</label>
+                                  </div>
+                                  </div>
+                                </div>
+                                 <!-- New Question 8-->
+                                 <div class = "col-md-12">
+                                  <p style = 'direction: rtl;'>
+                                    +آیا شرکت در این کارگاه های آموزشی را به دوستان خود نیز پیشنهاد می کنید؟!
+                                  </p>
+                              </div>
+                                 <div class = "col-md-12">
+                                   <div class="container">
+                                       <div class="radio8">
+                                         <input id="radio8-27" name="radio8" type="radio" value=1>
+                                         <label for="radio8-27" class="radio8-label">
+                                          بله
+                                         </label>
+                                       </div>
+                                     <div class="radio8">
+                                       <input id="radio8-28" name="radio8" type="radio" value=2>
+                                       <label  for="radio8-28" class="radio8-label">خیر</label>
+                                     </div>
+                                     </div>
+                                   </div>
+                                 <!-- New Question 9-->
+                                 <div class = "col-md-12">
+                                  <p style = 'direction: rtl;'>
+                                    +اگر انتقاد و یا پیشنهادی جهت بهبود دوره های برگزار شده دارید، لطفا نظر خود را اعلام بفرمایید.
+                                  </p>
+                              </div>
+                                 <div class = "col-md-12">
+                                   <div class="container">
+                                     <div class = 'row'>
+                                       <div class = "col-md-4"></div>
+                                       <div class = "col-md-8">
+                                         <textarea style = "direction: rtl;" name="textarea" placeholder="متن را اینجا وارد کنید" rows="6" cols="100" class="about-input-textarea"></textarea>
+                                        </div>
+                                     </div>
+                                     </div>
+                                   </div>
+                                 <!-- New Question -->
+
+                              <div class = "container">
+                                <div class = "row">
+                                  <div class = "col-md-4"></div>
+                                  <div class = "col-md-4">
+                                    <input type = "submit" class = "rastad-question-result" value = "ارسال نظر" >
+                                  </div>
+                                  <div class = "col-md-4"></div>
+                                </div>
+                              </div>
+
+
+                     </div>
+                     </form> 
+                  </div>
+              </div> 
+            </div>
+        </div>
+    </div>
+       
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>      
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/scrolling-nav.js"></script>    
+    <script src="js/jquery.easing.min.js"></script>     
+    <script src="js/nivo-lightbox.js"></script>     
+    <script src="js/jquery.magnific-popup.min.js"></script>      
+    <script src="js/main.js"></script>
+    <script src="js/loaded.js"></script>
+    <script>
+  
+    </script>
+  </body>
+</html>
