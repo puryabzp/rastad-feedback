@@ -7,11 +7,10 @@ from django.contrib.auth.models import User
 import random
 from django.utils import timezone
 import string
-
 class Certificate(models.Model):
-    user = models.OneToOneField(User,related_name='profile', on_delete=models.CASCADE)
+    user = models.ForeignKey(User,related_name='profile', on_delete=models.CASCADE)
     certificate = models.ImageField(_("image"), upload_to='staticfiles/certificates/')
-
+    course_type = models.ForeignKey('bootcamp.Course',related_name='certificates',on_delete=models.CASCADE,default='1')
 
 
 

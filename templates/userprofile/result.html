@@ -35,7 +35,9 @@
      <style>
 .rastad-question-links{
   color: #FF7300;
-  margin: 10px 10px 10px 10px;
+  text-align: center;
+  position: relative;
+  
 }
 .rastad-question-links:hover{
   color: #ffff;
@@ -45,6 +47,11 @@
 }
 .rastad-question-degree:hover{
   color: #ffff;
+}
+.anto-akbar{
+  width: 10%;
+  margin-left: 45%;
+  margin-right: 45%;
 }
      </style>
      
@@ -84,7 +91,7 @@
                      <div class = 'container'>
                          <div class = "row">
                              <div class = "col-md-12">
-                                 <h3 class = "academy-questions-title" style = "color: #FF7300;">راستادی عزیز</h3>
+                                 <h3 class = "academy-questions-title" style = "color: #FF7300;">{{request.user.first_name}} {{request.user.last_name}} عزیز</h3>
                                  <h5 class = "academy-questions-title2">
                                  ضمن تشکر فراوان از شما بابت شرکت در این نظرسنجی ، اکنون می توانید از طریق لینک های زیر دوره و مدرک خود را دانلود کنید.
                                  </h5>
@@ -92,19 +99,44 @@
                              <!-- New Question 1-->
                              <div class = "container">
                                <div class = "row">
+                                 {% if courses %}
                                    {%for course in courses %}
                                    <div class = "col-md-12">
-                                    <a href = "#" class = "rastad-question-links" style="direction: rtl;" >دانلود کنید</a>|
-                                    <p class = "rastad-question-degree">{{course.name}}</p>
+                                    
+                                    <p class = "rastad-question-degree" >
+                                      <a href = "{{course.course_link}}" class = "rastad-question-links" style="direction: rtl;" >دانلود کنید </a>|
+                                      {{course.name}} 
+                                    </p>
                                    </div>
 
                                    {% endfor %}
+                                  {% else %} 
 
-                                   <div class = "col-md-12">
-                                    <a href = "{{cert.certificate.url}}" class = "rastad-question-links" style="direction: rtl;" >دانلود کنید</a>|
-                                    <p  class = "rastad-question-degree">   مدرک آقای {{request.user.first_name}} {{request.user.last_name}} </p>
+                                  <div class = "col-md-12">
+                                    <p style="color: azure;">{{courses_error}} - </p>
                                    </div>
-                                 
+                                      
+
+                                  {% endif %} 
+                                  {% if certs %}
+                                      {% for cert in certs %}
+                                      <br>
+                                      <div class = "col-md-12">
+                                        
+                                        <p class = "rastad-question-degree" >
+                                          <a href = "{{cert.certificate.url}}" class = "rastad-question-links" style="direction: rtl;" >دانلود کنید </a>|
+                                            مدرک {{cert.course_type.name}} آقای {{request.user.first_name}} {{request.user.last_name}}
+                                          
+                                          
+                                        </p>
+                                      </div>
+                                      {% endfor %}
+                                  
+                                  {% else %}
+                                  <div class = "col-md-12">
+                                    <p style="color: azure;">در حال حاضر مدرکی برای شما صادر نگردیده است -</p>
+                                   </div>
+                                  {% endif %} 
                                   <!-- <div class = "col-md-12">
                                     <a href = "#" class = "rastad-question-links">لینک دانلود دوره تحلیل تکنیکال</a>|
                                     <a href = "#" class = "rastad-question-degree">لینک دانلود مدرک دوره تکنیکال</a>
@@ -127,13 +159,16 @@
 
                               <div class = "container">
                                 <div class = "row">
-                                  <div class = "col-md-4"></div>
-                                  <div class = "col-md-4">
-                                    <a href = "{%url 'logout' %}" class = "rastad-question-links" style="direction: rtl;" >خروج</a>
+                                  <div class = "col-4"></div>
+                                  <div class = "col-4">
+                                    <div class = "anto-akbar">
+                                      <a href = "{%url 'logout' %}" class = "rastad-question-links" >خروج</a>
+                                    </div>
                                   </div>
-                                  <div class = "col-md-4"></div>
+                                  <div class = "col-4"></div>
                                 </div>
                               </div>
+
 
 
 

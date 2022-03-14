@@ -71,10 +71,19 @@ def go_to_final_page(request):
     return render(request,'userprofile/academy-question.html',context)   
 def result(request):
     context = {}
-    courses = UserCourse.objects.get(user=request.user)
-    cert = Certificate.objects.get(user = request.user)
-    context['cert'] = cert
-    context['courses']=courses.course.all()
+    try:
+        courses = UserCourse.objects.get(user=request.user)
+        context['courses']=courses.course.all()
+    except UserCourse.DoesNotExist:
+        messages.error(request,'ویدیو های دوره برای شما در دسترس نیست') 
+        context['courses_error'] = 'ویدیو های دوره برای شما در دسترس نیست' 
+    try:      
+        cert = Certificate.objects.filter(user = request.user)
+        context['certs'] = cert
+    except:
+            messages.error(request,'مدرک شما صادر نگردیده است') 
+            context['cert_error'] = 'مدرک شما صادر نگردیده است'
+    print(Certificate.objects.filter(user = request.user))
     return render(request,'userprofile/result.html',context=context)
 
 def error_404(request, exception):
